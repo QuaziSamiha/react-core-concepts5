@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import {useState} from 'react'; 
+import { useState } from 'react';
 
 function App() {
   return (
     <div className="App">
-      
+
       <MovieCounter></MovieCounter>
       <MovieCounter></MovieCounter>
       <MovieCounter></MovieCounter>
       <MovieCounter></MovieCounter>
-      
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
@@ -49,13 +49,12 @@ function MovieCounter() {
   )
 }
 
-function MovieDisplay(props){
+function MovieDisplay(props) {
   return (
     <div>
       <h4>Movies I have acted: {props.movies}</h4>
     </div>
   )
 }
-
 
 export default App;
